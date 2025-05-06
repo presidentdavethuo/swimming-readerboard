@@ -1,0 +1,56 @@
+<div class="mobile-input">
+  <h1>Register Participant</h1>
+  <label for="laneNumber">Lane Number (1-4):</label>
+  <input type="number" id="laneNumber" min="1" max="4">
+
+  <label for="participantName">Participant Name:</label>
+  <input type="text" id="participantName">
+
+  <button id="submitBtn">Submit</button>
+  
+  <p id="message"></p>
+</div>
+body {
+  font-family: Arial, sans-serif;
+  background: #e8f5e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-input {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: blue;
+}
